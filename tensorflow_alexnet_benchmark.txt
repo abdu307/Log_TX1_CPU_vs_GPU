@@ -1,0 +1,52 @@
+ubuntu@tegra-ubuntu:~/tensorflow$ time python tensorflow/models/image/alexnet/alexnet_benchmark.py
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so.5.1.5 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so.8.0 locally
+conv1   [128, 56, 56, 64]
+pool1   [128, 27, 27, 64]
+conv2   [128, 27, 27, 192]
+pool2   [128, 13, 13, 192]
+conv3   [128, 13, 13, 384]
+conv4   [128, 13, 13, 256]
+conv5   [128, 13, 13, 256]
+pool5   [128, 6, 6, 256]
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] ARM has no NUMA node, hardcoding to return zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties: 
+name: NVIDIA Tegra X1
+major: 5 minor: 3 memoryClockRate (GHz) 0.072
+pciBusID 0000:00:00.0
+Total memory: 3.90GiB
+Free memory: 2.35GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0)
+E tensorflow/stream_executor/cuda/cuda_driver.cc:965] failed to allocate 2.06G (2213408768 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2017-01-12 00:57:43.978735: step 0, duration = 0.455
+2017-01-12 00:57:48.594666: step 10, duration = 0.468
+2017-01-12 00:57:53.239389: step 20, duration = 0.461
+2017-01-12 00:57:58.042641: step 30, duration = 0.586
+2017-01-12 00:58:02.694750: step 40, duration = 0.465
+2017-01-12 00:58:07.310701: step 50, duration = 0.458
+2017-01-12 00:58:11.915001: step 60, duration = 0.462
+2017-01-12 00:58:16.499003: step 70, duration = 0.450
+2017-01-12 00:58:21.209812: step 80, duration = 0.463
+2017-01-12 00:58:25.860248: step 90, duration = 0.450
+2017-01-12 00:58:30.041147: Forward across 100 steps, 0.465 +/- 0.017 sec / batch
+2017-01-12 00:58:53.796486: step 0, duration = 1.362
+2017-01-12 00:59:07.360341: step 10, duration = 1.375
+2017-01-12 00:59:20.912500: step 20, duration = 1.343
+2017-01-12 00:59:34.474072: step 30, duration = 1.355
+2017-01-12 00:59:48.156942: step 40, duration = 1.393
+2017-01-12 01:00:01.835483: step 50, duration = 1.369
+2017-01-12 01:00:15.375986: step 60, duration = 1.339
+2017-01-12 01:00:28.825445: step 70, duration = 1.341
+2017-01-12 01:00:42.349842: step 80, duration = 1.363
+2017-01-12 01:00:56.003089: step 90, duration = 1.384
+2017-01-12 01:01:08.273131: Forward-backward across 100 steps, 1.358 +/- 0.015 sec / batch
+
+real	3m39.773s
+user	1m32.320s
+sys	0m48.430s
+
