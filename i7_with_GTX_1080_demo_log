@@ -1,0 +1,46 @@
+HED preprocess: 0.000833988189697
+HED forward time: 0.0302579402924
+('/media/abdu307/myHD/misono/in/0l(1-10)n.jpg', '/media/abdu307/myHD/misono/in/1-1-l_n.jpg')
+Using OpenCV 3.1.0
+mode: 9
+Img: ./results/bboxes_img_preprocessed.png
+Img Background: ./results/bboxes_bg_preprocessed.png
+Output: ./results/bboxes_fg.png
+9
+KNNBGS()
+init done 
+~KNNBGS()
+HED preprocess: 0.00172281265259
+HED forward time: 0.0240149497986
+/usr/local/lib/python2.7/dist-packages/skimage/util/dtype.py:110: UserWarning: Possible precision loss when converting from float32 to uint8
+  "%s to %s" % (dtypeobj_in, dtypeobj))
+HED preprocess: 0.000833034515381
+HED forward time: 0.017599105835
+HED preprocess: 0.000842094421387
+HED forward time: 0.0159368515015
+HED preprocess: 0.00148391723633
+HED forward time: 0.0223660469055
+1
+/media/abdu307/myHD/misono/chip_counter/chip_counter/color_predictor/center_line_color_predictor.py:146: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  rotated2 = rotated[0.2 * h: 0.8 * h, :]
+(5, 0.6388888888888888)
+{'blue': 0, 'light_blue': 0, 'pink': 5, 'green': 0, 'yellow': 0, 'orange': 0, 'light_green': 0, 'red': 0}
+2
+(2, 0.9252873563218391)
+{'blue': 0, 'light_blue': 0, 'pink': 0, 'green': 0, 'yellow': 0, 'orange': 0, 'light_green': 2, 'red': 0}
+3
+(6, 0.603448275862069)
+{'blue': 0, 'light_blue': 0, 'pink': 0, 'green': 6, 'yellow': 0, 'orange': 0, 'light_green': 0, 'red': 0}
+4
+(10, 0.44140625)
+{'blue': 0, 'light_blue': 0, 'pink': 0, 'green': 0, 'yellow': 0, 'orange': 0, 'light_green': 10, 'red': 0}
+center_line_extractor_init time: 126.016611099
+center_line_counter_init time: 9.05990600586e-06
+center_line_color_predictor_init time: 0.632030963898
+load mask time: 1.01589894295
+detect_bbox time: 1.99961709976
+HED time: 0.0878901481628
+count & color time: 4.67830991745
+predict time: 4.76746797562
+total predict time: 7.11941599846
+
